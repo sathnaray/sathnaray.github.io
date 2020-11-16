@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head> 
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Sathya Narayanan - Welcome </title>
+<!---Favicon--->
+<link rel = "icon" type = "image/ico" href = "Images/SN-logo.ico" />
+<!---Font Awesome Icons--->
+<script src="https://kit.fontawesome.com/fb7fa90b00.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<!--Welcome Page-->
+<header>
+<!--SN Logo-->
+    <div class = "Logo-container">
+        <img src = "SN Logo.svg" alt = "logo" style = "max-width:75%;height:auto";/>
+    </div>
+
+<!--Nav Bar List Items-->
+    <div class = "toggle" onclick = "toggleMenu();"></div>
+        <ul class="nav-items">
+        <li> <a href="index.html" onclick = "toggleMenu();">Home</a> </li>
+        <li> <a href="#About-Me" onclick = "toggleMenu();">About Me</a> </li>
+        <li> <a href="#Experience" onclick = "toggleMenu();">Experience</a> </li>
+        <li> <a href="#Gallery" onclick = "toggleMenu();">Gallery</a> </li>
+        <li> <a href="#Contact-Me" onclick = "toggleMenu();">Contact Me</a> </li>
+        </ul>
+
+<!--Contact Me Button-->
+    <a class ="Contact" href="#Contact-Me">Contact</a>
+  </header>
+
+<!--Welcome Page Content-->
+    <section class = "banner">
+
+      <div class = "IntroText">
+        <h2>Sathya<span>Narayanan</span></h2>
+        <h3> Consultant | Engineer | Traveler </h3>
+<!--Social Media Icons-->
+        <div class = "Social-Contact">
+          <ul class="social-icons">
+            <li><a href = "https://www.facebook.com/sathya.narayanan.5201/" aria-label = "Facebook" target = "_blank"><i class="fa fa-facebook"></i> </a> </li>
+            <li><a href = "https://www.linkedin.com/in/snarayanan2/" aria-label = "LinkedIn" target = "_blank"><i class="fa fa-linkedin"></i> </a></li>
+            <li><a href = "https://www.instagram.com/sathnaray/" aria-label = "Instagram" target = "_blank"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class = "Profile_Image">
+        <img src = "Images/Sathya_Pic.png" alt = "Picture of me in Napa" style = "max-width:100%;height:auto";/>
+      </div>
+
+    </section>
+<!--Welcome Page Ends-->
+
+<!--About Me Page-->
+<section class = "About_Me">
+  <div class = "content">
+    <div class = "w50">
+      <img id = "About-Me" src = "Images/About Me Pic.png" class = "img" alt = "Picture of me in Spain" style = "max-width:75%;height:auto";>
+    </div>
+      <div class = "ContentBox w50">
+        <div class = "Heading">
+          <h2> About Me</h2>
+        </div>
+        <br>
+        <p>
+          An engineer turned consultant bringing engineering methodologies and technologies to the business world. As a technology and strategy consultant, I have combined my engineering background with business acumen to lead the digital transformation of risk management processes for some of the world's most well renowned companies in the technology, media and entertainment, healthcare, pharmaceutical and private education sectors.
+          <br><br>
+          I am a dedicated problem solver who is always looking for the next challenge to conquer. With an academic background in Industrial and Operations Engineering and a relentless drive to continuously improve, I am always seeking to optimize business operations and generate efficiencies through process improvement and the implementation of new technologies and strategies.
+          <br> <br>
+          As a passionate advocate for universal education, I not only spend my time volunteering as a teacher and help fundraise for educational initiatives, but by understanding the importance of education, I too am consistently looking to learn, develop, and improve as an individual. I am always searching for new challenges that will help me grow, so reach out if you have an opportunity! 
+        </p>
+  </div>
+</section>
+<!--About Me Page Ends-->
+
+<!--Experience Page Begins-->
+<section class = "Experience">
+  <div class = "Exp_Top_Heading">
+    <h2 id = "Experience"> Experience</h2>
+    <br>
+    <p> My experiences span a wide variety of domains and industries spanning from engineering, consulting and volunteering services. <br><br>Click on each tile below to learn more.</p>
+  </div>
+  <br>
+  <div class = "Exp_Heading">
+    <h3> Work Experience</h3>
+  </div>
+    <div class = "content">
+      <div class = "Work_Experience_Box">
+        <div class = "imgBox">
+        <img src = "Images/WoBo Logo.png" alt = "WorkBoard logo">
+        </div>
+        <div class ="BoxText">
+        <h3> WorkBoard <br>  <span> Strategic Services Consultant</span> </h3>
+        <div class = "Learn_More" onclick="flip()"><h4>Learn More </h4> </div>
+        </div>
+      </div>
+        <br>
+        <div class = "Work_Experience_Box">
+        <div class = "imgBox">
+        <img src = "Images/EY Logo.png" alt = "EY logo">
+        </div>
+        <div class ="BoxText">
+        <h3> Ernst & Young LLP <br>  <span> Senior Consultant</span>  </h3>
+        <div class = "Learn_More" onclick="flip()"><h4>Learn More </h4> </div>
+        </div>
+        </div>
+        <br>
+      <br> <br>
+        <div class = "Work_Experience_Box">
+        <div class = "imgBox">
+        <img src = "Images/GS Logo.png" alt = "Goldman Sachs logo">
+        </div>
+        <div class ="BoxText">
+        <h3> Goldman Sachs <br>  <span> Strategy Analyst</span> </h3>
+        <div class = "Learn_More" onclick="flip()"><h4>Learn More </h4> </div>
+        </div>
+        </div>
+      </div>
+    <div class = "Exp_Heading">
+      <h3> Volunteer Experience</h3>
+      </div>
+      <div class = "content">
+      <div class = "Volunteer_Experience_Box">
+      <div class = "imgBox">
+      <img src = "Images/UM Alumni.png" alt = "UM Alumni Association logo">
+      </div>
+      <div class ="BoxText">
+      <h3> Univerity of Michigan Alumni Association <br>  <span> Career Chair - Board Member</span>  </h3>
+      <div class = "Learn_More" onclick="flip()"><h4>Learn More </h4> </div>
+      </div>
+      </div>
+      <br>
+      <div class = "Volunteer_Experience_Box">
+      <div class = "imgBox">
+      <img src = "Images/SF ED Fund.png" alt = "San Francisco Education Fund">
+      </div>
+      <div class ="BoxText">
+      <h3> San Francisco Education Fund <br>  <span> Young Professionals Council </span> </h3>
+      <div class = "Learn_More" onclick="flip()"><h4>Learn More </h4> </div>
+      </div>
+      </div>
+      <br>
+      <div class = "Volunteer_Experience_Box">
+      <div class = "imgBox-IVHQ">
+      <img src = "Images/IVHQ.png" alt = "IVHQ logo">
+      </div>
+      <div class ="BoxText">
+      <h3> International Volunteer Headquarters <br>  <span> English Instructor</span>  </h3>
+      <div class = "Learn_More" onclick="flip()"><h4>Learn More </h4> </div>
+      </div>
+      </div>
+
+      <div class="break"></div>
+
+        <div class = "Resume_Download"><h3> Download a copy of my resume here!</h3>
+          <div class = "Download_Button">
+          <a href="https://drive.google.com/file/d/1hOoZDVW0WsBPDKUhQ9U_YAdVaPN27oOz/view?usp=sharing" download>
+           <i class="fas fa-download fa-3x"></i>
+          </a>
+        </div>
+        </div> 
+      </div>
+</section>
+<!--Experience Page Ends-->
+
+<!--Gallery Page Begins-->
+<div class = "Gallery_Top_Heading">
+  <h2 id = "Gallery"> Gallery</h2>
+  <br>
+  <p>Highlights from some of my travels over the years.</p>
+</div>
+<br>
+<section id="portfolio">
+  <div class="project">
+    <img class="project__image" src="Images/Morocco - 2.jpg">
+    <p>Morocco</p>
+    <h3 class="grid__title"> Sahara Desert, 2017</h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+  
+  <div class="project">
+    <img class="project__image" src="Images/Spain - Seville Palace.JPG">
+    <p>Spain</p>
+    <h3 class="grid__title">Seville Alcazar Palace, 2018 </h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+  
+  <div class="project">
+    <img class="project__image" src="Images/Japan Team lab Borderless.jpg">
+    <p>Japan</p>
+    <h3 class="grid__title">TeamLab Borderless, 2019</h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+  
+  <div class="project">
+    <img class="project__image" src="Images/SIngapore.jpeg">
+    <p>Singapore</p>
+    <h3 class="grid__title"> Marina Bay Sands Garden, 2019</h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+  <div class="project">
+    <img class="project__image" src="Images/Morocco - 3.jpg">
+    <p>Morocco</p>
+    <h3 class="grid__title"> Ouzoud Falls, 2017</h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+  
+  <div class="project">
+    <img class="project__image" src="Images/Yosemite.JPG">
+    <p>Yosemite National Park</p>
+    <h3 class="grid__title"> Half Dome, 2019</h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+  
+  <div class="project">
+    <img class="project__image" src="Images/Japan - Jagosaki.JPG">
+    <p>Japan</p>
+    <h3 class="grid__title"> Jagosaki Coast, 2019</h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+  
+  <div class="project">
+    <img class="project__image" src="Images/Shanghai.jpg">
+    <p>China</p>
+    <h3 class="grid__title"> Bund Shanghai, 2019</h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+  <div class="overlay">
+    <div class="overlay__inner">
+      <button class="close">close X</button>
+      <img>
+    </div>
+  </div>
+</section>
+
+<!--Gallery Page Ends-->
+
+<!--Contact Form-->
+      <form method="post" Class = "Contact-Form_Container" action="contact.php">
+      <div class = "Contact-Form">
+         <h2 id = "Contact-Me"> Contact Me</h2>
+          <div class = "row100">
+            <div class = "col">
+              <div class = "inputBox">
+                <input type="text" id="fname" name="fname" required ="required">
+                <span class ="text">First Name</span>
+                <span class ="line"></span>
+              </div>
+            </div>
+            <div class = "col">
+              <div class = "inputBox">
+                <input type="text" id="lname" name="lname" required ="required">
+                <span class ="text">Last Name</span>
+                <span class ="line"></span>
+              </div>
+            </div>
+          </div>
+          <div class = "row100">
+            <div class = "col">
+              <div class = "inputBox">
+                <input type="text" id="email" name="email" required ="required">
+                <span class ="text">Email</span>
+                <span class ="line"></span>
+              </div>
+            </div>
+            <div class = "col">
+              <div class = "inputBox">
+                <input type="text" id="PhoneNumber" name="PhoneNumber" required ="">
+                <span class ="text">Phone Number (Optional)</span>
+                <span class ="line"></span>
+              </div>
+            </div>
+          </div>
+          <div class = "row100">
+            <div class = "col">
+              <div class = "inputBox textarea">
+                <textarea name = "Message" required = "required"></textarea>
+                <span class ="text">Type your message here</span>
+                <span class ="line"></span>
+              </div>
+            </div>
+        </div>
+        <div class = "row100">
+            <div class = "col">
+              <input type="submit" value="Send" onclick="alert('Thank you for your submission! I will reach out shortly!')">
+            </div>
+          </div>
+      </div>
+    </form>
+<!--Contact Form Ends-->
+
+<!--Footer-->
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+      <div class = "top-line-footer">
+      <img src = "SN Logo.svg" alt = "logo" style = "max-width:25%;height:auto";/>
+      <h3>Sathya<span>Narayanan</span></h3>
+      </div>
+
+      <p class="footer-links">
+      <a href="#Logo-Container">Home</a> |
+      <a href="#About-Me">About Me</a> |
+      <a href="#Experience">Experience</a> |
+      <a href="#Gallery">Gallery</a> |
+      <a href="#Contact-Me">Contact Me</a>
+      </p>
+   
+      <p class="footer-company-name">&copy; Sathya Narayanan 2020 </p>
+      </div>
+   
+      <div class="footer-center">
+   
+      <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>642 Emerald Cove Dr.</span> Charlotte, NC</p>
+      </div>
+   
+      <div>
+      <i class="fa fa-phone"></i>
+      <p>(248) 613-2656</p>
+      </div>
+   
+      <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:sathnaray@gmail.com">sathnaray@gmail.com</a></p>
+      </div>
+   
+      </div>
+   
+      <div class="footer-right">
+   
+      <p class="footer-company-about">
+      <span>About Me</span>
+        Engineer turned consultant who is currently an Executive Strategy Coach helping enterprises unlock the power of OKRs. Reach out with any exciting new opportunities!
+      </p>
+   
+      <ul class="footer-icons">
+   
+      <a href="https://www.facebook.com/sathya.narayanan.5201"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/snarayanan2/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/sathnaray/"><i class="fa fa-instagram"></i></a>
+  
+      </ul>
+   
+      </div>
+   
+</footer>
+<!--Footer Ends-->
+
+<!--JavaScript to make Nav Bar sticky-->
+<script type = "text/javascript">
+  window.addEventListener('scroll',function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+  });
+
+  function toggleMenu(){
+      var menuToggle = document.querySelector('.toggle');
+      var NavItems = document.querySelector('.nav-items');
+      menuToggle.classList.toggle('active');
+      NavItems.classList.toggle('active');
+  }
+
+  function flip() {
+    $('.Work_Experience_Box').toggleClass('flipped');
+  }
+
+  const buttons = document.querySelectorAll('.project');
+const overlay = document.querySelector('.overlay');
+const overlayImage = document.querySelector('.overlay__inner img');
+
+function open(e) {
+  overlay.classList.add('open');
+  const src= e.currentTarget.querySelector('img').src;
+  overlayImage.src = src;
+}
+
+function close() {
+  overlay.classList.remove('open');
+}
+
+buttons.forEach(button => button.addEventListener('click', open));
+overlay.addEventListener('click', close);
+
+</script>
+
+    <script src="main.js"></script>
+</body>
+</html>
